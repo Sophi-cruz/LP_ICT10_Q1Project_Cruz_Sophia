@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccoons Bin</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://i.pinimg.com/736x/8e/56/da/8e56daef7d3d4c79e51b182254c1a7d9.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #dcdcdc; 
+        }
+
+       
+        .header-section {
+            background-color: #1a1e24;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header-section h1 {
+            margin: 5px 0;
+            font-size: 2.2rem;
+            font-weight: 400;
+        }
+
+        .header-section p {
+            color: #b0b5bc;
+            margin: 5px 0 0 0;
+            font-size: 1rem;
+        }
+
+        
+        .main-container {
+            max-width: 600px;
+            margin: 40px auto;            
+            background-color: #ffffff;    
+            padding: 40px;
+            border-radius: 4px;           
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+        }
+
+        .input-group {
+        margin-bottom: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: left;
+        }
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px; 
+    font-size: 0.95rem;
+    color: #334155;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.output-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    border-left: 4px solid #3b82f6;
+    color: #475569;
+    font-size: 0.9rem;
+    text-align: center;
+    min-height: 20px;
+}
+
+    </style>
+</head>
+<body>
+
+        <div class="header-section">
+        <h1>🦝</h1>
+        <h1>Raccoons Bin</h1>
+        <p> 🗑️ 90626 customers loove this frfr</p>
+        <p> Stock STU Generator</p>
+    </div>
+    
+
+<div class="main-container">
+    
+    <div class="input-group">
+        <label for="category">🏷️ Category</label>
+        <select id="category">
+            <option value="Perishables">Perishables</option>
+            <option value="Supplies">Supplies</option>
+            <option value="Premium Items">Premium Items</option>
+        </select>
+    </div>
+
+
+    <div class="input-group">
+        <label for="product_name">📦 Product Name</label>
+        <input type="text" id="product_name" placeholder="e.g., Bottled Water">
+    </div>
+
+
+    <div class="input-group">
+        <label for="quantity">📈 Stock Quantity</label>
+        <input type="number" id="quantity" placeholder="e.g., 50">
+    </div>
+
+
+    <button class="btn-sku" onclick="SKU_generator(event)">Generate SKU</button>
+    
+
+    <div id="show">Your SKU will appear here!!</div>
+</div>
+
+</body>
+</html>

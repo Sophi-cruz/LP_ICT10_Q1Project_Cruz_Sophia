@@ -48,52 +48,105 @@
         }
 
         .input-group {
-        margin-bottom: 22px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        text-align: left;
-        }
-.input-group input, .input-group select {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px; 
-    font-size: 0.95rem;
-    color: #334155;
-    background-color: #f8fafc;
-    box-sizing: border-box;
-    transition: border-color 0.2s;
+            margin-bottom: 22px;
+         display: flex;
+            flex-direction: column;
+         gap: 8px;
+            text-align: left;
+ }
+      .input-group input, .input-group select {
+            width: 100%;
+             padding: 12px 14px;
+             border: 1px solid #cbd5e1;
+             border-radius: 8px; 
+            font-size: 0.95rem;
+             color: #334155;
+              background-color: #f8fafc;
+            box-sizing: border-box;
+              transition: border-color 0.2s;
 }
 
-.output-box {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f1f5f9;
-    border-radius: 8px;
-    border-left: 4px solid #3b82f6;
-    color: #475569;
-    font-size: 0.9rem;
-    text-align: center;
-    min-height: 20px;
+        .output-box {
+             margin-top: 20px;
+             padding: 15px;
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+            color: #475569;
+            font-size: 0.9rem;
+            text-align: center;
+            min-height: 20px;
 }
+
+        .btn-order {
+            background-color: #ffffff;
+            color: #333;
+            border: 1px solid #999;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: auto;
+        }
+
+        .btn-order:hover {
+            background-color: #f0f0f0;
+            border-color: #666;
+        }
+
+        #show {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .footer-note {
+            text-align: center;
+            color: #afafaf;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+
+        .simple-navbar {
+    background-color: #1a1e24;
+    padding: 15px;
+    text-align: center;
+}
+
+
 
     </style>
 </head>
 <body>
 
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">Raccoons Bin</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item active">Menu</a></li>
+            <li><a href="sku.html" class="nav-item">SKU Generator</a></li>
+        </ul>
+    </div>
+</nav>
+
         <div class="header-section">
         <h1>🦝</h1>
         <h1>Raccoons Bin</h1>
         <p> 🗑️ 90626 customers loove this frfr</p>
-        <p> Stock STU Generator</p>
+        <p> Stock SKU Generator</p>
     </div>
     
+
 
 <div class="main-container">
     
     <div class="input-group">
-        <label for="category">🏷️ Category</label>
+        <label for="category">Category</label>
         <select id="category">
             <option value="Perishables">Perishables</option>
             <option value="Supplies">Supplies</option>
@@ -103,22 +156,23 @@
 
 
     <div class="input-group">
-        <label for="product_name">📦 Product Name</label>
-        <input type="text" id="product_name" placeholder="e.g., Bottled Water">
+        <label for="product_name"> Product Name</label>
+        <input type="text" id="product_name" placeholder="e.g., Beetles, Snails, Chicken Bones, Etc">
     </div>
 
 
     <div class="input-group">
-        <label for="quantity">📈 Stock Quantity</label>
+        <label for="quantity"> Stock Quantity</label>
         <input type="number" id="quantity" placeholder="e.g., 50">
     </div>
 
 
-    <button class="btn-sku" onclick="SKU_generator(event)">Generate SKU</button>
+     <button class="btn-order" onclick="create_order(event)">Generate SKU !</button>
     
 
     <div id="show">Your SKU will appear here!!</div>
 </div>
+
 
 </body>
 </html>

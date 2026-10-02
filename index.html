@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccoons Bin</title>
+    <style>
 
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://i.pinimg.com/736x/8e/56/da/8e56daef7d3d4c79e51b182254c1a7d9.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #dcdcdc; 
+        }
+
+       
+        .header-section {
+            background-color: #1a1e24;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header-section h1 {
+            margin: 5px 0;
+            font-size: 2.2rem;
+            font-weight: 400;
+        }
+
+        .header-section p {
+            color: #b0b5bc;
+            margin: 5px 0 0 0;
+            font-size: 1rem;
+        }
+
+        
+        .main-container {
+            max-width: 600px;
+            margin: 40px auto;            
+            background-color: #ffffff;    
+            padding: 40px;
+            border-radius: 4px;           
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+        }
+
+        .menu-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            color: #333;
+        }
+
+        
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .menu-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        
+        .item-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            object-fit: cover;
+        }
+
+        .item-label {
+            cursor: pointer;
+            flex-grow: 1;
+        }
+
+        
+        .btn-order {
+            background-color: #ffffff;
+            color: #333;
+            border: 1px solid #999;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: auto;
+        }
+
+        .btn-order:hover {
+            background-color: #f0f0f0;
+            border-color: #666;
+        }
+
+        #show {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .footer-note {
+            text-align: center;
+            color: #afafaf;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+     
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">Raccoons Bin</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item active">Menu</a></li>
+            <li><a href="sku.html" class="nav-item">SKU Generator</a></li>
+        </ul>
+    </div>
+</nav>
+    
+    <div class="header-section">
+        <h1>🦝</h1>
+        <h1>Raccoons Bin</h1>
+        <p> 🗑️ 90626 customers loove this frfr</p>
+    </div>
+
+    
+    <div class="main-container">
+        <div class="menu-title"> .-.. Menu</div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="Beetles" value="199.00">
+            <img class="item-icon" src="https://i.pinimg.com/736x/2b/dc/7e/2bdc7e16cf14b2f12c1ae96f185c706b.jpg" alt="Beetles">
+            <label for="Beetles" class="item-label">Beetles — ₱199.00</label>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="Snails" value="99.00">
+            <img class="item-icon" src="https://i.pinimg.com/736x/88/dc/9b/88dc9b53d9ba4dbf970a972607f3dcaf.jpg" alt="Snails">
+            <label for="Snails" class="item-label">Snails — ₱99.00</label>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="Chicken Bones" value="150.00">
+            <img class="item-icon" src="https://i.pinimg.com/736x/5d/53/57/5d535710f46b453a7914d56a3dbdd0f2.jpg" alt="Chicken Bones">
+            <label for="Chicken Bones" class="item-label">Chicken Bones — ₱150.00</label>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="Meat trimmings" value="299.00">
+            <img class="item-icon" src="https://i.pinimg.com/736x/37/c4/35/37c4356e592780bf720586ef85f5a57c.jpg" alt="Meat trimmings">
+            <label for="Meat trimmings" class="item-label">Meat trimmings — ₱299.00</label>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="Premium goldfish" value="450.00">
+            <img class="item-icon" src="https://i.pinimg.com/736x/24/f5/43/24f543685f8cb214869d4a69058f44eb.jpg" alt="Premium goldfish">
+            <label for="Premium goldfish" class="item-label">Premium goldfish — ₱450.00</label>
+        </div>
+
+        <button class="btn-order" onclick="create_order(event)">Create Order !</button>
+        
+        <div id="show">Your order summary will appear here!!</div>
+        
+
+    </div>
+
+</body>
+</html>
